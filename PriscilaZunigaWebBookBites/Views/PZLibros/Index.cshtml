@@ -1,0 +1,59 @@
+﻿@model IEnumerable<PriscilaZunigaWebBookBites.Models.PZLibro>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PZTitulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PZAutor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PZVolumen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PZPrecio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PZNombre)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PZTitulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PZAutor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PZVolumen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PZPrecio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PZNombre)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PZLibroID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PZLibroID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PZLibroID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,48 @@
+﻿@model PriscilaZunigaWebBookBites.Models.PZCopia
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>PZCopia</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PZCantidad)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PZCantidad)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PZColor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PZColor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PZFormato)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PZFormato)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PZFechaCopia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PZFechaCopia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PZLibro)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PZLibro.PZAutor)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.PZCopiaID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
