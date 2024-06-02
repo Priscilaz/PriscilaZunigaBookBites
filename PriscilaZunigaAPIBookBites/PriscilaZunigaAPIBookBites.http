@@ -1,0 +1,6 @@
+@PriscilaZunigaAPIBookBites_HostAddress = http://localhost:5197
+
+GET {{PriscilaZunigaAPIBookBites_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
