@@ -1,6 +1,45 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Política de Privacidad";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: darkviolet;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h1>@ViewData["Title"]</h1>
+                <br>
+                <p>Esta página, incluyendo su contenido y diseño, es propiedad de Priscila Zúñiga. Todos los derechos están reservados para el año 2024. Se prohíbe la reproducción total o parcial de cualquier parte del contenido sin autorización previa por escrito. Cualquier uso no autorizado constituye una violación de los derechos de autor y puede resultar en acciones legales. Para solicitar permisos de reproducción, comuníquese con el propietario del sitio. Se agradece el respeto a la propiedad intelectual y la privacidad de los usuarios.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
