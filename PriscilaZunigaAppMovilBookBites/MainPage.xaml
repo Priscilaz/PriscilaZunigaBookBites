@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PriscilaZunigaAppMovilBookBites.MainPage">
+
+    <StackLayout>
+        <Label Text="Bienvenido a BookBites!"  
+           HorizontalOptions="Center" 
+           VerticalOptions="CenterAndExpand" />
+        <Label Text="A continuación puedes conocer los libros que tenemos disponibles durante este mes"/>
+
+        <Button Text="Cargar Libros!" 
+            Clicked="Button_Clicked" 
+            HorizontalOptions="Center" />
+
+        <ListView x:Name="listView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding pztitulo}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
